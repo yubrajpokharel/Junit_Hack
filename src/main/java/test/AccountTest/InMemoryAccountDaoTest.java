@@ -2,6 +2,7 @@ package test.AccountTest;
 
 import account.Account;
 import account.dao.ImmemoryAccountDao;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,6 +28,7 @@ public class InMemoryAccountDaoTest {
         accountDao = new ImmemoryAccountDao();
         accountDao.createAccount(existingAccount);
     }
+
 
     @Test
     public void accountExists(){
